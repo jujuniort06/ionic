@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <!-- Campo do Usuário -->
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text" value="admin@senai" [(ngModel)]="login"></ion-input>
+    </ion-item>
+
+  <!-- Campo de Senha -->
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" value="1234" [(ngModel)]="senha"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <!-- Botão de Entrar -->
+  <button ion-button (click)="fazerLogin()" full>Entrar</button>
+
+  <!-- CheckBox Lembrar a senha? -->
+  <ion-item>
+    <ion-label>Lembrar?</ion-label>
+    <ion-checkbox color="green" checked="true"></ion-checkbox>
+  </ion-item>
+
+  <!-- Menu inferior -->
+  <ion-fab left bottom>
+    <button ion-fab color="light"><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>
+
+
+
+
